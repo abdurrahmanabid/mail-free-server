@@ -8,9 +8,7 @@ const cors = require('cors')
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
-app.use(cors({
-    origin:process.env.FRONTEND_URL
-}))
+app.use(cors());
 
 //connect to database
 connectDB()
